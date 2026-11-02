@@ -1,0 +1,90 @@
+\documentclass[border=15pt, varwidth=\maxdimen]{standalone}
+
+% Paquetes esenciales
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{newtxtext, newtxmath} % Tipografía académica (Times)
+\usepackage{booktabs} % Líneas horizontales de calidad
+\usepackage{multirow} % Para celdas de ubicación
+\usepackage{array}    % Manejo de columnas
+\usepackage{xcolor}   % Gestión de color
+
+% Definición de un color elegante (Azul Institucional Sobrio)
+\definecolor{ClassicBlue}{RGB}{0, 51, 102}
+
+% Configuración de columnas
+% L = Alineación izquierda, ancho fijo
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\begin{document}
+
+{\fontfamily{qhv}\selectfont
+\centering
+\textcolor{ClassicBlue}{\Large \textbf{PROGRAMA ACADÉMICO DETALLADO}}\\
+\vspace{0.2cm}
+\small \textbf{La Mecánica Cuántica en su Centenario: Un corto paseo por sus inicios y su presente}
+}
+
+\vspace{0.5cm}
+
+\renewcommand{\arraystretch}{1.4} % Espaciado generoso para lectura cómoda
+\setlength{\tabcolsep}{8pt}
+
+\begin{tabular}{@{} L{2.2cm} L{4.5cm} L{8.5cm} L{4.0cm} @{}}
+    
+    \toprule[1.5pt]
+    \multicolumn{4}{c}{\textbf{\color{ClassicBlue}\large JUEVES 4 DE DICIEMBRE}} \\
+    \midrule[1pt]
+    \textbf{\color{ClassicBlue}Hora} & \textbf{\color{ClassicBlue}Ponente} & \textbf{\color{ClassicBlue}Título de la Presentación} & \textbf{\color{ClassicBlue}Lugar} \\
+    \midrule
+
+    08:00 -- 08:30 &  & \textit{Registro} & \multirow{9}{=}{Ed. 51 (Á. Valtierra) \newline Salones 603 y 604 \newline (PUJ)} \\
+    08:30 -- 09:00 &  & \textit{Apertura del Evento} & \\
+    09:00 -- 09:30 & \textbf{Reinaldo José \newline Bernal Velásquez} & ¿Son verdaderas las teorías científicas? & \\
+    09:30 -- 10:15 & \textbf{José Alfonso \newline Leyva Rojas} & Caminando el Artículo de Heisenberg y el Surgimiento de la Mecánica Matricial a la Born & \\
+    10:15 -- 11:00 & \textbf{Ángela María Guzmán} & Entrelazamiento Cuántico y Computación Cuántica & \\
+    11:00 -- 11:15 &  & \textit{Pausa para Café} & \\
+    11:15 -- 12:00 & \textbf{David Berenstein} & Gravedad Cuántica & \\
+    12:00 -- 12:30 & \textbf{John Hernan \newline Diaz Forero} & La Fase que se Escapó del Pozo: Una Historia Cuántica para no Perder la Coherencia & \\
+    \midrule
+    12:30 -- 14:00 &  & \textit{Pausa para Almuerzo} & \\
+    \midrule
+    
+    14:00 -- 16:00 &  & \textit{Sesión de Pósters y Experimentos} & \multirow{4}{=}{Ed. Félix Restrepo \newline Aud. Carlos Corredor \newline (PUJ)} \\
+    16:00 -- 16:30 & \textbf{Henry Alberto \newline Méndez Pinzón} & Fenómenos Cuánticos en Semiconductores Orgánicos & \\
+    16:30 -- 17:00 & \textbf{Henry Mauricio \newline Ortiz Salamanca} & Una vista a las vibraciones colectivas en mecánica cuántica: modelación y medidas & \\
+    17:00 -- 17:30 & \textbf{César Aurelio \newline Herreño Fierro} & Plasmones de Superficie y Aplicaciones a 2644 msnm & \\
+
+    \bottomrule[1.5pt]
+    \multicolumn{4}{c}{} \\ 
+    \multicolumn{4}{c}{} \\
+
+    \toprule[1.5pt]
+    \multicolumn{4}{c}{\textbf{\color{ClassicBlue}\large VIERNES 5 DE DICIEMBRE}} \\
+    \midrule[1pt]
+    \textbf{\color{ClassicBlue}Hora} & \textbf{\color{ClassicBlue}Ponente} & \textbf{\color{ClassicBlue}Título de la Presentación} & \textbf{\color{ClassicBlue}Lugar} \\
+    \midrule
+
+    08:00 -- 08:30 &  & \textit{Bienvenida} & \multirow{8}{=}{Ed. 51 (Á. Valtierra) \newline Salones 603 y 604 \newline (PUJ)} \\
+    08:30 -- 09:15 & \textbf{Julián Andrés \newline Salamanca Bernal} & Computación Cuántica & \\
+    09:15 -- 09:45 & \textbf{Germán Alexander \newline Pabón Rosas} & Biología Cuántica: Fotosíntesis y más Allá & \\
+    09:45 -- 10:15 & \textbf{Edwin Munévar Espitia} & Neutrones y Células & \\
+    10:15 -- 10:45 & \textbf{María Esperanza \newline Castellanos López} & La Mecánica Cuántica al Servicio de la Medicina & \\
+    10:45 -- 11:00 &  & \textit{Pausa para Café} & \\
+    11:00 -- 12:30 &  & \textit{Sesión de Pósters y Experimentos} & \\
+    \midrule
+    12:30 -- 14:00 &  & \textit{Pausa para Almuerzo} & \\
+    \midrule
+
+    14:00 -- 15:00 & \textbf{Herbert Vinck Posada} & Tecnologías Cuánticas: 100 Años Revolucionando al Mundo & \multirow{7}{=}{Ed. Félix Restrepo \newline Aud. Carlos Corredor \newline (PUJ)} \\
+    15:00 -- 15:45 & \textbf{Andrés David \newline Rodríguez Salas} & Metrología Cuántica: Reloj Atómico & \\
+    15:45 -- 16:15 & \textbf{Carlos Andrés \newline Gómez Vasco} & Energías, Paisajes y Aprendizaje: El Nobel de Física 2024 Visto desde la Mecánica Cuántica & \\
+    16:15 -- 16:30 &  & \textit{Pausa para Café} & \\
+    16:30 -- 17:00 & \textbf{Olga Lucía Ospina \newline \& Ángela Riaño} & Sistema Surfactante Pulmonar & \\
+    17:00 -- 17:30 & \textbf{Miguel José \newline Espitia Rico} & Hamiltoniano Electrónico del Sólido Cristalino, una Solución Autoconsistente Mediante DFT & \\
+    \bottomrule[1.5pt]
+
+\end{tabular}
+
+\end{document}
