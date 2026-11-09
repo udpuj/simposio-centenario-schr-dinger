@@ -64,20 +64,77 @@
 
       <div style="margin-top: 2rem;">
         <h3 data-i18n="register.info.title">Información del evento</h3>
-        <p><strong data-i18n="register.info.date.label">Fecha:</strong> <span data-i18n="register.info.date.value">Viernes (fecha por confirmar · 2026)</span></p>
-        <p><strong data-i18n="register.info.time.label">Horario:</strong> <span data-i18n="register.info.time.value">13:00 – 18:00</span></p>
+        <p><strong data-i18n="register.info.date.label">Fecha:</strong> <span data-i18n="register.info.date.value">Diciembre 4, viernes</span></p>
+        <p><strong data-i18n="register.info.time.label">Horario:</strong> <span data-i18n="register.info.time.value">13:00 – 19:00</span></p>
         <p><strong data-i18n="register.info.location.label">Lugar:</strong> <a href="lugar.html" class="btn--ghost" data-i18n="register.info.location.link">Auditorio Marino Troncoso, Edificio Fernando Barón (PUJ) — Ver mapa</a></p>
         <p><strong data-i18n="register.info.cost.label">Costo:</strong> <span data-i18n="register.info.cost.value">Gratuito</span></p>
         <p><strong data-i18n="register.info.modality.label">Modalidad:</strong> <span data-i18n="register.info.modality.value">Presencial</span></p>
       </div>
 
-      <div class="card card--bordered" style="margin-top: 2.5rem; padding: 2.5rem; text-align: center;">
-        <span class="chip" style="margin-bottom: 1rem;" data-i18n="common.coming_soon.badge">Próximamente</span>
-        <h2 style="border: none; padding-bottom: 0; margin-bottom: 0.75rem;" data-i18n="register.form.title">Formulario de Inscripción</h2>
-        <p style="max-width: 680px; margin: 0 auto;" data-i18n="register.form.coming_soon">El formulario de inscripción se habilitará próximamente cuando se anuncien las fechas oficiales del evento.</p>
+      <!-- =========================================================================
+           FORMULARIO DE INSCRIPCIÓN (GOOGLE FORMS)
+           Pega el enlace de tu Google Form en el atributo `src` del <iframe> abajo
+           (por ejemplo: https://docs.google.com/forms/d/e/TU_ID/viewform?embedded=true)
+           ========================================================================= -->
+      <div class="card form-embed-card" style="margin-top: 2.5rem;">
+        <div class="form-embed-header">
+          <h2 style="border: none; padding-bottom: 0; margin-bottom: 0.5rem;" data-i18n="register.form.title">Formulario de Inscripción</h2>
+          <p data-i18n="register.form.subtitle">Completa el formulario directamente en esta página para inscribirte en el simposio.</p>
+        </div>
+
+        <div class="form-embed-container" id="form-embed-container">
+          <iframe
+            id="google-form-iframe"
+            class="form-embed-iframe"
+            src=""
+            width="100%"
+            height="820"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            loading="lazy"
+            title="Formulario de Inscripción — Simposio Centenario Ecuación de Schrödinger">
+            Cargando…
+          </iframe>
+          <div class="form-embed-placeholder" id="form-embed-placeholder">
+            <span class="chip" style="margin-bottom: 1rem;" data-i18n="common.coming_soon.badge">Próximamente</span>
+            <p style="max-width: 640px; margin: 0 auto;" data-i18n="register.form.coming_soon">El formulario de inscripción se habilitará aquí próximamente.</p>
+          </div>
+        </div>
+
+        <div class="form-embed-actions" id="form-embed-actions" style="display: none;">
+          <a id="google-form-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--sm" data-i18n="register.form.open_tab">Abrir formulario en una nueva pestaña</a>
+        </div>
       </div>
     </section>
   </main>
+
+  <script>
+    (function initGoogleFormEmbed() {
+      const iframe = document.getElementById('google-form-iframe');
+      const placeholder = document.getElementById('form-embed-placeholder');
+      const actions = document.getElementById('form-embed-actions');
+      const externalLink = document.getElementById('google-form-link');
+      if (!iframe) return;
+
+      const rawUrl = (iframe.getAttribute('src') || '').trim();
+      if (rawUrl) {
+        let embedUrl = rawUrl;
+        if (rawUrl.includes('docs.google.com/forms') && !rawUrl.includes('embedded=true')) {
+          embedUrl += (rawUrl.includes('?') ? '&' : '?') + 'embedded=true';
+          iframe.setAttribute('src', embedUrl);
+        }
+        iframe.style.display = 'block';
+        if (placeholder) placeholder.style.display = 'none';
+        if (externalLink) {
+          externalLink.href = rawUrl.replace(/[?&]embedded=true/, '');
+        }
+        if (actions) actions.style.display = 'block';
+      } else {
+        iframe.style.display = 'none';
+      }
+    })();
+  </script>
 
   <footer>
     <hr style="border:none; border-top:1px solid #1d2745; margin-bottom:1rem;">
