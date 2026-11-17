@@ -193,7 +193,7 @@ const translations = {
     'program.talk7.topic': 'La biosíntesis bajo la mirada de la biofísica cuántica',
     'program.talk7.speaker': 'Adriana de Mendoza (PUJ)',
     'program.talk8.act': 'Charla 8',
-    'program.talk8.topic': 'Sobre el gato de Schrödinger y einselection de Zurek',
+    'program.talk8.topic': 'Sobre el gato de Schrödinger y einselection de Zurich',
     'program.talk8.speaker': 'Darío Egloff (Universidad Sergio Arboleda)',
 
     // Registration (registro.html)
@@ -451,7 +451,7 @@ const translations = {
     'program.talk7.topic': 'Biosynthesis Through the Lens of Quantum Biophysics',
     'program.talk7.speaker': 'Adriana de Mendoza (PUJ)',
     'program.talk8.act': 'Talk 8',
-    'program.talk8.topic': 'On Schrödinger\'s Cat and Zurek\'s Einselection',
+    'program.talk8.topic': 'On Schrödinger\'s Cat and Zurich\'s Einselection',
     'program.talk8.speaker': 'Darío Egloff (Universidad Sergio Arboleda)',
 
     // Registration (registro.html)
