@@ -5,5 +5,5 @@
 5. Javier Cano (PUJ & Universidad Colegio Mayor de Cundinamarca) - "La ecuación de Wheeler-DeWitt y la función de onda para el universo"
 6. Alejandro Fonseca (UNAL) - Por confirmar
 7. José Luis Zamora (UD) - "Teoría de Wilson y fundamentos de Lattice QFT"
-8. Adriana de Mendoza (PUJ) - "La biosíntesis bajo la mirada de la biofísica cuántica"
+8. Adriana de Mendoza (PUJ) - "La fotosíntesis bajo la mirada de la biofísica cuántica"
 9. Darío Egloff (Universidad Sergio Arboleda) - "Sobre el gato de Schrödinger y einselection de Zurich"
