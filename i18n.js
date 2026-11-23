@@ -12,6 +12,18 @@ const translations = {
     'meta.title.contact': 'Contacto — Centenario Ecuación de Schrödinger 2026',
     'meta.title.ack': 'Agradecimientos — Centenario Ecuación de Schrödinger 2026',
 
+    // Meta descriptions
+    'meta.desc.index': 'Simposio Centenario de la Ecuación de Schrödinger y la Mecánica Ondulatoria (1926–2026). Viernes 4 de diciembre de 13:00 a 19:00 en la Pontificia Universidad Javeriana, Bogotá. Entrada libre.',
+    'meta.desc.about': 'Conoce la visión académica, historia, instituciones organizadoras y detalles del Simposio Centenario de la Ecuación de Schrödinger y la Mecánica Ondulatoria 2026 en Bogotá.',
+    'meta.desc.media': 'Medios visuales, transmisiones, memorias digitales y archivo de la edición 2025 del Simposio de Física Cuántica organizado por PUJ y Universidad Distrital.',
+    'meta.desc.guests': 'Conoce a los 8 ponentes invitados y resúmenes de charlas del Simposio Centenario de la Ecuación de Schrödinger 2026: PUJ, Universidad Distrital, UNAL, Sergio Arboleda, UCMC y CJO.',
+    'meta.desc.committee': 'Comité organizador docente y estudiantil del Simposio Centenario Ecuación de Schrödinger 2026, iniciativa conjunta de la Pontificia Universidad Javeriana y la Universidad Distrital.',
+    'meta.desc.program': 'Agenda completa del Simposio Centenario de la Ecuación de Schrödinger: viernes 4 de diciembre de 2026, de 13:00 a 19:00, con 8 charlas en el Auditorio Marino Troncoso (PUJ).',
+    'meta.desc.register': 'Inscripción gratuita al Simposio Centenario de la Ecuación de Schrödinger y la Mecánica Ondulatoria 2026. Viernes 4 de diciembre de 13:00 a 19:00 en la Pontificia Universidad Javeriana, Bogotá.',
+    'meta.desc.location': 'Ubicación, mapa y horario del Simposio Centenario Ecuación de Schrödinger 2026: Auditorio Marino Troncoso, Edificio Fernando Barón, Pontificia Universidad Javeriana, Bogotá D.C.',
+    'meta.desc.contact': 'Contacta al comité organizador del Simposio Centenario Ecuación de Schrödinger 2026 por correo electrónico o únete a nuestro canal oficial de WhatsApp.',
+    'meta.desc.ack': 'Agradecimientos a las unidades académicas, equipos técnicos y colaboradores de la Pontificia Universidad Javeriana y la Universidad Distrital que hacen posible el simposio.',
+
     // Navigation
     'nav.brand': 'Simposio Física Cuántica',
     'nav.about': 'Acerca',
@@ -273,6 +285,18 @@ const translations = {
     'meta.title.location': 'Location — Schrödinger Equation Centenary 2026',
     'meta.title.contact': 'Contact — Schrödinger Equation Centenary 2026',
     'meta.title.ack': 'Acknowledgments — Schrödinger Equation Centenary 2026',
+
+    // Meta descriptions
+    'meta.desc.index': 'Centenary of the Schrödinger Equation and Wave Mechanics Symposium (1926–2026). Friday, December 4, 13:00–19:00 at Pontificia Universidad Javeriana, Bogotá. Free admission.',
+    'meta.desc.about': 'Learn about the academic vision, history, organizing universities, and details of the 2026 Schrödinger Equation Centenary Symposium in Bogotá.',
+    'meta.desc.media': 'Visual media, live broadcasts, digital records, and 2025 edition archive of the Quantum Physics Symposium organized by PUJ and Universidad Distrital.',
+    'meta.desc.guests': 'Meet the 8 invited speakers and talk abstracts for the 2026 Schrödinger Equation Centenary Symposium from PUJ, Universidad Distrital, UNAL, Sergio Arboleda, UCMC, and CJO.',
+    'meta.desc.committee': 'Faculty and student organizing committee for the 2026 Schrödinger Equation Centenary Symposium, jointly organized by Pontificia Universidad Javeriana and Universidad Distrital.',
+    'meta.desc.program': 'Full schedule for the Schrödinger Equation Centenary Symposium: Friday, December 4, 2026, 13:00–19:00, featuring 8 invited talks at Auditorio Marino Troncoso (PUJ).',
+    'meta.desc.register': 'Free registration for the 2026 Schrödinger Equation and Wave Mechanics Centenary Symposium on Friday, December 4, 13:00–19:00 at Pontificia Universidad Javeriana, Bogotá.',
+    'meta.desc.location': 'Venue, map, and schedule for the 2026 Schrödinger Equation Centenary Symposium: Auditorio Marino Troncoso, Edificio Fernando Barón, Pontificia Universidad Javeriana, Bogotá.',
+    'meta.desc.contact': 'Contact the organizing committee of the 2026 Schrödinger Equation Centenary Symposium by email or join our official WhatsApp channel.',
+    'meta.desc.ack': 'Acknowledgments to the academic departments, technical teams, and collaborators from Pontificia Universidad Javeriana and Universidad Distrital.',
 
     // Navigation
     'nav.brand': 'Quantum Physics Symposium',
@@ -547,7 +571,7 @@ const translations = {
       }
     });
 
-    // Translate page <title> if data-i18n-title is set on <title> or <html>
+    // Translate page <title> if data-i18n is set on <title>
     const titleEl = document.querySelector('title[data-i18n]');
     if (titleEl) {
       const key = titleEl.getAttribute('data-i18n');
@@ -555,6 +579,14 @@ const translations = {
         document.title = dict[key];
       }
     }
+
+    // Translate <meta> content attributes with data-i18n-content
+    document.querySelectorAll('meta[data-i18n-content]').forEach(el => {
+      const key = el.getAttribute('data-i18n-content');
+      if (dict[key] !== undefined) {
+        el.setAttribute('content', dict[key]);
+      }
+    });
 
     // Update language toggle button label
     const langBtn = document.getElementById('lang-toggle');
