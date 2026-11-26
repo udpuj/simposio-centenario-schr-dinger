@@ -1104,6 +1104,56 @@ section.section--participate {
   color: var(--text-muted);
 }
 
+.speaker-abstract__text + .speaker-abstract__text {
+  margin-top: 0.65rem;
+}
+
+.speaker-abstract__equation {
+  margin: 0.75rem 0;
+  padding: 0.45rem 0.75rem;
+  text-align: center;
+  font-family: "Lora", Georgia, serif;
+  font-size: 1rem;
+  color: var(--text-main);
+  background: var(--neutral-50);
+  border-radius: 0.45rem;
+}
+
+.speaker-abstract__figure {
+  margin-top: 0.9rem;
+  padding: 0.75rem;
+  background: var(--neutral-50);
+  border: 1px solid var(--border-soft);
+  border-radius: 0.6rem;
+  text-align: center;
+}
+
+.card img.speaker-abstract__img {
+  width: 100%;
+  height: auto;
+  max-width: 320px;
+  display: block;
+  margin: 0 auto;
+}
+
+.card:hover img.speaker-abstract__img {
+  transform: none;
+  filter: none;
+}
+
+@media (max-width: 640px) {
+  .card img.speaker-abstract__img {
+    height: auto;
+  }
+}
+
+.speaker-abstract__caption {
+  margin-top: 0.5rem;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
 /* ====== Tablas (Programa) ====== */
 .table-wrap { 
   overflow: auto; 

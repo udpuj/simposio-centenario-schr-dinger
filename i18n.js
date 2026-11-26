@@ -63,7 +63,7 @@ const translations = {
     'home.hero.card.morning.title': '13:00 – 14:15 · Apertura y Fundamentos',
     'home.hero.card.morning.text': 'Bienvenida, seguida de las charlas sobre teoría del conocimiento (Reinaldo Bernal, PUJ) e introducción a Schrödinger (J. Alfonso Leyva, PUJ).',
     'home.hero.card.afternoon.title': '14:30 – 16:00 · Bloque Central de Charlas',
-    'home.hero.card.afternoon.text': 'Entrelazamiento cuántico y tomografía PET (Jorge Cifuentes), la ecuación de Wheeler-DeWitt y la función de onda del universo (Javier Cano), y Schrödinger y correlaciones no-locales (Alejandro Fonseca, UNAL).',
+    'home.hero.card.afternoon.text': 'Entrelazamiento cuántico y tomografía PET (Jorge Cifuentes), la ecuación de Wheeler-DeWitt y la función de onda del universo (Javier Alexander Cano Arango), y Schrödinger y correlaciones no-locales (Alejandro Fonseca, UNAL).',
     'home.hero.card.status.title': '16:15 – 17:45 · Frontera y Cierre',
     'home.hero.card.status.text': 'Teoría de Wilson y Lattice QCD (José Luis Zamora, UD), biofísica cuántica de la fotosíntesis (Adriana de Mendoza, PUJ), y el gato de Schrödinger y einselection (Darío Egloff, Sergio Arboleda).',
     'home.hero.card.cta': 'Ver programa completo',
@@ -150,8 +150,13 @@ const translations = {
     'speakers.s2.affil': 'Pontificia Universidad Javeriana',
     'speakers.s3.name': 'Jorge Cifuentes',
     'speakers.s3.affil': 'Centro Javeriano de Oncología',
-    'speakers.s4.name': 'Javier Cano',
+    'speakers.s4.name': 'Javier Alexander Cano Arango',
     'speakers.s4.affil': 'Pontificia Universidad Javeriana & Universidad Colegio Mayor de Cundinamarca',
+    'speakers.s4.abstract.p1': 'Al preguntarnos si es posible estudiar el universo como un único sistema físico desde el punto de vista de la mecánica cuántica también surge la pregunta del cómo hacerlo, la respuesta a esta interrogante fue planteada de manera <em>parcial</em> a finales de los años 60 tras la introducción por Bryce DeWitt de lo que hoy día conocemos como la ecuación de Wheeler-DeWitt',
+    'speakers.s4.abstract.p2': 'A lo largo de esta charla hablaremos sobre su significado, ¿es realmente una función de onda?, sus implicaciones ¿predice el Big Bang?, algunas soluciones (Hartle-Hawking, Vilenkin) y sus problemas ¿está bien definida?',
+    'speakers.s4.figure.src': 'images/wheeler-dewitt-desitter.svg',
+    'speakers.s4.figure.alt': 'Diagrama de la región lorentziana (de Sitter) y la región euclidiana (U > 0) en la geometría de Hartle-Hawking',
+    'speakers.s4.figure.caption': 'Transición entre la región euclidiana (U > 0) y la región lorentziana (de Sitter).',
     'speakers.s5.name': 'Alejandro Fonseca',
     'speakers.s5.affil': 'Universidad Nacional de Colombia',
     'speakers.s6.name': 'José Luis Zamora',
@@ -197,8 +202,8 @@ const translations = {
     'program.talk3.topic': 'Sobre el entrelazamiento cuántico y la tomografía de emisión de positrones (PET)',
     'program.talk3.speaker': 'Jorge Cifuentes (Centro Javeriano de Oncología)',
     'program.talk4.act': 'Charla 4',
-    'program.talk4.topic': 'La ecuación de Wheeler-DeWitt y la función de onda para el universo',
-    'program.talk4.speaker': 'Javier Cano (PUJ & Universidad Colegio Mayor de Cundinamarca)',
+    'program.talk4.topic': 'La ecuación de Wheeler-DeWitt y la función de onda del universo',
+    'program.talk4.speaker': 'Javier Alexander Cano Arango (PUJ & Universidad Colegio Mayor de Cundinamarca)',
     'program.talk5.act': 'Charla 5',
     'program.talk5.topic': 'Schrödinger y Correlaciones No-locales',
     'program.talk5.speaker': 'Alejandro Fonseca (UNAL)',
@@ -337,7 +342,7 @@ const translations = {
     'home.hero.card.morning.title': '13:00 – 14:15 · Opening & Foundations',
     'home.hero.card.morning.text': 'Welcome remarks, followed by talks on theory of knowledge (Reinaldo Bernal, PUJ) and an introduction to Schrödinger (J. Alfonso Leyva, PUJ).',
     'home.hero.card.afternoon.title': '14:30 – 16:00 · Core Talks Block',
-    'home.hero.card.afternoon.text': 'Quantum entanglement & PET tomography (Jorge Cifuentes), the Wheeler-DeWitt equation & the wave function of the universe (Javier Cano), and Schrödinger and non-local correlations (Alejandro Fonseca, UNAL).',
+    'home.hero.card.afternoon.text': 'Quantum entanglement & PET tomography (Jorge Cifuentes), the Wheeler-DeWitt equation & the wave function of the universe (Javier Alexander Cano Arango), and Schrödinger and non-local correlations (Alejandro Fonseca, UNAL).',
     'home.hero.card.status.title': '16:15 – 17:45 · Frontier & Closing',
     'home.hero.card.status.text': 'Wilson\'s theory & Lattice QCD (José Luis Zamora, UD), quantum biophysics of photosynthesis (Adriana de Mendoza, PUJ), and Schrödinger\'s cat & einselection (Darío Egloff, Sergio Arboleda).',
     'home.hero.card.cta': 'View full program',
@@ -424,8 +429,13 @@ const translations = {
     'speakers.s2.affil': 'Pontificia Universidad Javeriana',
     'speakers.s3.name': 'Jorge Cifuentes',
     'speakers.s3.affil': 'Centro Javeriano de Oncología',
-    'speakers.s4.name': 'Javier Cano',
+    'speakers.s4.name': 'Javier Alexander Cano Arango',
     'speakers.s4.affil': 'Pontificia Universidad Javeriana & Universidad Colegio Mayor de Cundinamarca',
+    'speakers.s4.abstract.p1': 'When we ask whether it is possible to study the universe as a single physical system from the perspective of quantum mechanics, the question of how to do so also arises. A <em>partial</em> answer to this question was proposed in the late 1960s following Bryce DeWitt\'s introduction of what we now know as the Wheeler-DeWitt equation',
+    'speakers.s4.abstract.p2': 'Throughout this talk, we will discuss its meaning—is it truly a wave function?—its implications—does it predict the Big Bang?—some solutions (Hartle-Hawking, Vilenkin), and its open problems—is it well-defined?',
+    'speakers.s4.figure.src': 'images/wheeler-dewitt-desitter-en.svg',
+    'speakers.s4.figure.alt': 'Diagram of the Lorentzian (de Sitter) region and the Euclidean region (U > 0) in the Hartle-Hawking geometry',
+    'speakers.s4.figure.caption': 'Transition between the Euclidean region (U > 0) and the Lorentzian (de Sitter) region.',
     'speakers.s5.name': 'Alejandro Fonseca',
     'speakers.s5.affil': 'Universidad Nacional de Colombia',
     'speakers.s6.name': 'José Luis Zamora',
@@ -472,7 +482,7 @@ const translations = {
     'program.talk3.speaker': 'Jorge Cifuentes (Centro Javeriano de Oncología)',
     'program.talk4.act': 'Talk 4',
     'program.talk4.topic': 'The Wheeler-DeWitt Equation and the Wave Function of the Universe',
-    'program.talk4.speaker': 'Javier Cano (PUJ & Universidad Colegio Mayor de Cundinamarca)',
+    'program.talk4.speaker': 'Javier Alexander Cano Arango (PUJ & Universidad Colegio Mayor de Cundinamarca)',
     'program.talk5.act': 'Talk 5',
     'program.talk5.topic': 'Schrödinger and Non-local Correlations',
     'program.talk5.speaker': 'Alejandro Fonseca (UNAL)',
@@ -580,12 +590,18 @@ const translations = {
       }
     }
 
-    // Translate <meta> content attributes with data-i18n-content
-    document.querySelectorAll('meta[data-i18n-content]').forEach(el => {
-      const key = el.getAttribute('data-i18n-content');
-      if (dict[key] !== undefined) {
-        el.setAttribute('content', dict[key]);
-      }
+    // Translate <meta> content and image attributes (data-i18n-content, data-i18n-src, data-i18n-alt)
+    [
+      ['data-i18n-content', 'content'],
+      ['data-i18n-src', 'src'],
+      ['data-i18n-alt', 'alt']
+    ].forEach(([dataAttr, targetAttr]) => {
+      document.querySelectorAll(`[${dataAttr}]`).forEach(el => {
+        const key = el.getAttribute(dataAttr);
+        if (dict[key] !== undefined) {
+          el.setAttribute(targetAttr, dict[key]);
+        }
+      });
     });
 
     // Update language toggle button label
