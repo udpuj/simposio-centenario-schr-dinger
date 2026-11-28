@@ -1,5 +1,5 @@
 1. Bienvenida
-2. J. Alfonso Leyva (PUJ) - "Sobre Schrödinger un *cortissimo* panorama"
+2. J. Alfonso Leyva (PUJ) - "Über den Schrödinger: *un cortissimo panorama*"
 3. Reinaldo Bernal (PUJ) - "Emergencia"
 4. Javier Alexander Cano Arango (PUJ & Universidad Colegio Mayor de Cundinamarca) - "La Función de Onda del Universo: Ecuación de Wheeler-DeWitt"
 5. Alejandro Fonseca (UNAL) - "Schrödinger y Correlaciones No-locales"
